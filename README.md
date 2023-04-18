@@ -1,5 +1,7 @@
 for email subscription : google sheet and appscript is used 
 paste this in code.gs 
+
+
 var sheetName = 'Sheet1'
 var scriptProp = PropertiesService.getScriptProperties()
 
@@ -42,6 +44,8 @@ function doPost (e) {
 }
 
 paste this in html page
+
+
 <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbyaC6BZ-8eIy7i0wG3iSC126Fvbm7Cl-LPW4Gc1vB_cL7xyA4VrmwxRw_l6dFihq_1w/exec' (change this with the script from appscript
             const form = document.forms['submit-to-google-sheet']
@@ -62,6 +66,8 @@ paste this in html page
 for contribution page:
 
 code.gs
+
+
 function getData() {
   let ws = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Sheet1');
   let date1 = ws.getRange('H1').getValue();
@@ -102,6 +108,9 @@ function submitFormData(formObject){
 }
 
 contribute.html
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -159,6 +168,9 @@ contribute.html
 </html>
 
 javascript.html
+
+
+
 <script>
    
    setInterval((showClock) => {
